@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Bootstrap Responsive Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+</head>
+
+<body>
+    <!-- MAIN CONTAINER-->
+    <div class="container-fluid gx-0"> <!-- container-fluid for full width, gx-0 for no horizontal gutters/spacing -->
+
+
+
+        <!-- NAVBAR COMPONENT -->
+        <nav class="navbar navbar-expand bg-dark-subtle" > <!-- navbar-expand for responsive, bg-dark-subtle for Background Color -->
+
+            <!-- Fluid/Full width container for the navbar content -->
+            <div class="container-fluid">
+
+                <!-- The brand/logo/site name -->
+                <a class="navbar-brand" href="#">Navbar</a>
+
+                <!-- UL list of navbar menu items -->
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Menu Item 1</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Item 2</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Item 3</a>
+                    </li>
+                </ul>
+
+            </div>
+        </nav>
+        <!-- END NAVBAR COMPONENT -->
+
+
+
+
+        <!-- MAIN CONTENT AREA -->
+        <div class="p-4 bg-body-secondary"> <!-- p-4 is Padding, bg-body-secondary is Background Color -->
+
+
+
+            
+            <!-- RESPONSIVE GRID LAYOUT WITH CARD COMPONENTS -->
+            <div class="container-fluid mb-4"> <!-- container-fluid for full width, mb-4 for Margin Bottom -->
+                
+                <h2>Responsive Grid</h2>
+
+                <div class="row"> <!-- row for a grid row -->
+
+                    <!-- Column with Card component -->
+                    <div class="col-sm-6 col-md-4 col-lg-3 col-xl-6">       <!-- Mobile first column sizing (eg: sm = half, md = third, lg = quarter, xl = half) -->
+                        <div class="card p-3 mb-3">                             <!-- Card component, p-3 for Padding, mb-3 for Margin Bottom -->
+                            <h5 class="card-title">Column 1 Card</h5>                    <!-- Card title -->
+                            <p class="card-text">Some example card text.</p>        <!-- Card text -->
+                            <button class="btn btn-sm btn-primary">Action</button>  <!-- Small button, primary colour -->
+                        </div>
+                    </div>
+
+                    <!-- More columns with card components -->
+                    <div class="col-sm-6 col-md-4 col-lg-3 col-xl-6">
+                        <div class="card p-3 mb-3">
+                            <h5 class="card-title">Column 2 Card</h5>
+                            <p class="card-text">Some example card text.</p>
+                            <button class="btn btn-sm btn-outline-secondary">Secondary</button>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-4 col-lg-3 col-xl-6">
+                        <div class="card p-3 mb-3">
+                            <h5 class="card-title">Column 3 Card</h5>
+                            <p class="card-text">Some example card text.</p>
+                            <button class="btn btn-sm btn-danger">Danger</button>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-12 col-lg-3 col-xl-6">
+                        <div class="card p-3 mb-3">
+                            <h5 class="card-title">Column 4 Card</h5>
+                            <p class="card-text">Some example card text.</p>
+                            <button class="btn btn-sm btn-success">Success</button>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            <!-- END RESPONSIVE GRID LAYOUT WITH CARD COMPONENTS -->
+
+
+
+
+            <!-- FORM AND ALERTS -->
+            <div class="container-fluid mb-4"> <!-- container-fluid for full width, mb-4 for Margin Bottom -->
+
+                <div class="row"> <!-- row for a grid row -->
+
+                    <div class="col-sm-12 col-md-6 "> <!-- Mobile first column sizing (eg: sm = full, md = half) -->
+
+                        <!--  FORM -->
+                        <h2>Form and Inputs</h2>
+                        <form>
+                            <div class="mb-3">                                                      <!-- mb-3 for Margin Bottom -->
+                                <label for="nameInput" class="form-label">Name</label>                  <!-- form-label for styling -->
+                                <input id="nameInput" class="form-control" placeholder="Jane Doe">      <!-- form-control for styling -->
+                            </div>
+                            <div class="mb-3">
+                                <label for="textInput" class="form-label">Text</label>
+                                <input id="textInput" class="form-control" placeholder="Some text">
+                            </div>
+                            <div class="mb-3 form-check">                                           <!-- form-check for checkbox styling -->
+                                <input id="subscribe" type="checkbox" class="form-check-input">         <!-- form-check-input for styling -->
+                                <label for="subscribe" class="form-check-label">Tick the box</label>    <!-- form-check-label for styling -->
+                            </div>
+                            <button type="submit" class="btn btn-primary">Submit</button>          <!-- Submit Button with primary colour -->
+                        </form>
+
+                    </div>
+
+                    <div class="col-sm-12 col-md-6 "> <!-- Mobile first column sizing (eg: sm = full, md = half) -->
+
+                        <!-- ALERTS -->
+                        <h2>Alerts</h2>
+                        
+                        <div class="alert alert-success" role="alert">  <!-- alert + alert-success for success alert styling, role="alert" for accessibility -->
+                            This is a success alert (.alert + .alert-success)
+                        </div>
+                        <div class="alert alert-danger" role="alert">   <!-- alert + alert-danger for danger alert styling, role="alert" for accessibility -->
+                            This is a danger (.alert + .alert-danger)
+                        </div>
+                        <div class="alert alert-warning" role="alert">
+                            This is a warning alert (.alert + .alert-warning)
+                        </div>
+
+                    </div>
+
+                </div>
+        
+            </div>
+            <!-- END FORM AND ALERTS -->
+
+
+
+
+        </div>
+        <!-- END MAIN CONTENT AREA -->
+
+        <!-- FOOTER -->
+        <footer class="text-center p-3 bg-body-tertiary"> <!-- text-center for center alignment, p-3 for Padding, bg-body-tertiary is Background Color -->
+            <small>Demo by Jonathan Zasada-James at Sheffield Hallam University</small>
+        </footer>
+
+    </div>
+    <!-- END MAIN CONTAINER-->
+
+</body>
+</html>
