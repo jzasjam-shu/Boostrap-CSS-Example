@@ -7,7 +7,8 @@ Load a simple responsive page with Bootstrap CSS  and some example styled elemen
 
 > Screenshot
 > 
-> 
+> <img width="1214" height="782" alt="image" src="https://github.com/user-attachments/assets/6df81585-5576-4c9e-b732-72b947742f4a" />
+
 
 
 
